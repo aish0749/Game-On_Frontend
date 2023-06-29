@@ -1,10 +1,14 @@
-import React from 'react'
-import Homepage from '../src/pages/Homepage'
+import React from "react";
+import "./App.css";
+import Home from "./pages/Home";
+import Login from "./components/Login";
 
 const App = () => {
   return (
-    <Homepage />
-  )
-}
+    <div className="app">
+      <Home />
+    </div>
+  );
+};
 
-export default App
+export default App;
