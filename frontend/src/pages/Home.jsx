@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Navbar from "../components/Navbar";
-import Login from "../components/Login";
+// import Result from "../pages/Result";
 import game1 from "../assets/game1.png";
 import game2 from "../assets/game2.png";
 import game3 from "../assets/game3.png";
@@ -11,12 +10,11 @@ import unity from "../assets/unity-5.png";
 import unreal from "../assets/unreal-5.png";
 
 import spiderman from "../assets/spiderman.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="home">
-      <Navbar />
-
       <div className="hero-section">
         <div className="hero-main-content">
           <h1>Work that we produce for our clients</h1>
@@ -29,8 +27,11 @@ const Home = () => {
       </div>
 
       <div className="input-box">
+        <h2>Lookout for your Game!!!</h2>
         <input type="text" placeholder="SEARCH FOR YOUR GAME" />
+        <Link to="/result">
         <button className="cta-btn">Search</button>
+        </Link>
       </div>
 
       <div className="trending-games">
@@ -52,7 +53,7 @@ const Home = () => {
         </h2>
         <img src={spiderman} alt="" className="spiderman-img" />
       </section>
-      {/* <Login /> */}
+      {/* <Result /> */}
     </div>
 
   );

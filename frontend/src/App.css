@@ -6,6 +6,13 @@
   color: #fff;
 }
 
+.app{
+    background-image: url(../src/assets/homepage.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    
+}
+
 a,
 Link {
   text-decoration: none;
